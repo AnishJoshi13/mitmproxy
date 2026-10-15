@@ -539,9 +539,7 @@ class ClientTLSLayer(TLSLayer):
             # In the case of TLS-over-TLS, we already have client TLS. As the outer TLS connection between client
             # and proxy isn't that interesting to us, we just unset the attributes here and keep the inner TLS
             # session's attributes.
-            # Alternatively we could create a new Client instance,
-            # but for now we keep it simple. There is a proof-of-concept at
-            # https://github.com/mitmproxy/mitmproxy/commit/9b6e2a716888b7787514733b76a5936afa485352.
+            # Alternatively we could create a new Client instance, but for now we keep it simple.
             context.client.alpn = None
             context.client.cipher = None
             context.client.sni = None
