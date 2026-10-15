@@ -13,6 +13,10 @@ interface for HTTP/1, HTTP/2, and WebSockets.
 
 ``mitmweb`` is a web-based interface for mitmproxy.
 
+## Note
+
+This fork is the baseline and is to be the golden solution for the TCP CONNECT over HTTP/2 problem.
+
 ## Installation
 
 The installation instructions are [here](https://docs.mitmproxy.org/stable/overview-installation).
