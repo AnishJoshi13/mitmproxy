@@ -539,7 +539,6 @@ class ClientTLSLayer(TLSLayer):
             # In the case of TLS-over-TLS, we already have client TLS. As the outer TLS connection between client
             # and proxy isn't that interesting to us, we just unset the attributes here and keep the inner TLS
             # session's attributes.
-            # Alternatively we could create a new Client instance, but for now we keep it simple.
             context.client.alpn = None
             context.client.cipher = None
             context.client.sni = None
